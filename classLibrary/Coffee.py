@@ -8,14 +8,6 @@ class Coffee(BaseModel):
     price = FloatField(column_name="price", null=False)
     class Meta:
         table_name = "coffe"
-    # _name: str
-    # _size: str
-    # _price: float
-
-    # def __init__(self, name, size, price):
-    #     self._name = name
-    #     self._size = size
-    #     self._price = price
 
     def getName(self):
         return self._name

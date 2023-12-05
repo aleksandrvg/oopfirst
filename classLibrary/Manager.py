@@ -9,14 +9,3 @@ class Manager(User, BaseModel):
     class Meta:
         table_name = "manager"
 
-    # def __init__(self, login, password, name, phone, bonus):
-    #     super().__init__(name, phone, bonus)
-    #     self._login = login
-    #     self._password = password
-    #
-    # def getLogin(self):
-    #     return self._login
-    #
-    # def getPassword(self):
-    #     return self._password
-

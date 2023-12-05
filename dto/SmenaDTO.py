@@ -7,6 +7,7 @@ def CreateSmena(manager:Manager):
     timeOpen = datetime.datetime.now().strftime("%H:%M:%S")
     smena = Smena(date=date, timeOpen=timeOpen, manager=manager)
     smena.save()
+    return smena
 
 def CloseSmena(smena:Smena,summ:float):
     smena.timeClose = datetime.datetime.now().strftime("%H:%M:%S")
